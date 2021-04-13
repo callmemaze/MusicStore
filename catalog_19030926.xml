@@ -1,0 +1,65 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog_19030926.css"?>  
+
+<musicStore>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                    <logo></logo>
+                <div class="hamburger">
+                    <button>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Projects</a></li>
+                  </ul>
+            </nav>
+        </header>
+    </div>
+    <storeDetails>
+        <storeName></storeName>
+        <address></address>
+        <music>
+            <song title="bohemian rhapsody">
+                <genre>Genre: Rock</genre>
+                <director>Director: Roy Thomas Baker</director> 
+                <producer>Producer: Roy Thomas Baker</producer>
+                <writer>Song Writer: Freddie Mercury</writer> 
+                <album>Album: Live Killer</album>
+                <label>Label: EMI</label>
+                <releaseYear>
+                    Released: 
+                    <year>1975</year>
+                    <month>October</month>
+                    <day>31</day>
+                </releaseYear>
+                <length>
+                    Legth:
+                    <minute>5m</minute>
+                    <second>55</second>
+                </length>
+                <description>Description: Bohemian</description>
+                <artwork></artwork>
+            </song>
+        </music>
+        <phoneNumber></phoneNumber>
+        <website></website>
+        <Logo></Logo>
+    </storeDetails>
+    <script xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
+        const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
+        ]]></script>
+</musicStore>
