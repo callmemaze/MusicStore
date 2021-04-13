@@ -5,20 +5,24 @@
     <div class="container">
         <header>
             <nav class="navbar">
-                    <logo></logo>
-                <div class="hamburger">
-                    <button>
-                        <span></span>
-                        <span></span>
-                    </button>
+                <logo></logo>
+                <div class="menu">
+                    <div class="search">
+                    </div>
+                    <div class="cart">
+                    </div>
+                    <div class="hamburger">
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Projects</a></li>
-                  </ul>
             </nav>
         </header>
+        <div class="slide">
+            
+        </div>
     </div>
     <storeDetails>
         <storeName></storeName>
@@ -51,15 +55,7 @@
         <Logo></Logo>
     </storeDetails>
     <script xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
-        const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
-});
+        
         ]]></script>
+        
 </musicStore>
