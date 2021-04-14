@@ -24,10 +24,9 @@ div[class~=container]{
 /* Header */
 header{
     width:100%;
-    height: 15vh;
+    height: 10vh;
     z-index: 99;
-    display: block; 
-    position: fixed;  
+    display: block;    
 }
 
 nav{
@@ -84,24 +83,39 @@ div[class~=cart]{
     content: url('./cart.png');
 }
 
+div[class~=slider]{
+    width: 100%;
+    height: 40vh;
+    display: block;
+}
+div[class~=slider] img{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+   
+}
 div[class~=slide]{
     width: 100%;
-    height: 300px;
-    content:url(./jm.jpg);
+    height: 100%;
+    content:url(./.jpg);
     object-fit: cover;
-    background-position: center;
-    overflow: hidden;
     animation:slider 8s infinite linear; 
-    position: relative;
 }
 @keyframes slider{
-    0%{content: url(./background.jpg);}
+    0%{
+        content: url(./21pilot.jpg);
+        object-fit: cover;
+    }
 
     20%{
-        content: url(./jm.jpg);
+        content: url(./taylor.jpg);
     }
+    
     35%{content: url(./background.jpg);}
-    70%{content: url(./jm.jpg);}
+    
+    70%{content: url(./1.jpg);
+       
+    }
 }
 
 

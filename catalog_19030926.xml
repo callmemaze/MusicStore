@@ -19,9 +19,13 @@
                     </div>
                 </div>
             </nav>
+
         </header>
-        <div class="slide">
-            
+        
+        <div class="slider">
+            <div class="slide">
+
+            </div>
         </div>
     </div>
     <storeDetails>
