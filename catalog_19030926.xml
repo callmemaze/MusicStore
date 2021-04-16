@@ -1,6 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="catalog_19030926.css"?>  
-<body id="bdy">
 <musicStore>
     <div class="container">
         <header>
@@ -22,9 +21,6 @@
                     </ul>
                 </div>
                 <div class="menu">
-                    <html xmlns="http://www.w3.org/1999/xhtml">
-                        <button id="btn" onclick="toggleTheme()">Dark Theme</button>
-                    </html>
                     <div class="search">
                     </div>
                     <div class="cart">
@@ -39,10 +35,8 @@
             </nav>
 
         </header>
-        
         <div class="slider">
             <div class="slide">
-
             </div>
         </div>
     </div>
@@ -103,19 +97,4 @@
             </song>
         </music> 
     </storeDetails>
-    <script xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
-        function toggleTheme(){
-            var btn = document.getElementById("btn");
-            var bdy = document.getElementById("bdy");
-            bdy.classList.toggle("dark-theme");
-            if(bdy.classList.contains("dark-theme")){
-                btn.innerHTML = "Light Theme";
-            }
-            else{
-                btn.innerHTML = "Dark Theme";
-            }
-        }
-        ]]></script>
-        
 </musicStore>
-</body>
