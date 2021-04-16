@@ -1,12 +1,30 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="catalog_19030926.css"?>  
-
+<body id="bdy">
 <musicStore>
     <div class="container">
         <header>
             <nav class="navbar">
                 <logo></logo>
+                <div class="genre">
+                    <ul>
+                        <li>Genre
+                            <div class="sub-menu">
+                                <ul>
+                                    <li>Rock</li>
+                                    <li>Jazz</li>
+                                    <li>Pop</li>
+                                    <li>Country</li>
+                                    <li>Dubstep</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="menu">
+                    <html xmlns="http://www.w3.org/1999/xhtml">
+                        <button id="btn" onclick="toggleTheme()">Dark Theme</button>
+                    </html>
                     <div class="search">
                     </div>
                     <div class="cart">
@@ -31,6 +49,9 @@
     <storeDetails>
         <storeName></storeName>
         <address></address>
+        <phoneNumber></phoneNumber>
+        <website></website>
+        <Logo></Logo>
         <music>
             <song title="bohemian rhapsody">
                 <genre>Genre: Rock</genre>
@@ -51,15 +72,50 @@
                     <second>55</second>
                 </length>
                 <description>Description: Bohemian</description>
-                <artwork></artwork>
+                <artwork>
+                    <html xmlns="http://www.w3.org/1999/xhtml">
+                        <img src="./Continuum.jpg"></img>
+                    </html>
+                </artwork>
             </song>
-        </music>
-        <phoneNumber></phoneNumber>
-        <website></website>
-        <Logo></Logo>
+            <song title="bohemian rhapsody">
+                <genre>Genre: Rock</genre>
+                <director>Director: Roy Thomas Baker</director> 
+                <producer>Producer: Roy Thomas Baker</producer>
+                <writer>Song Writer: Freddie Mercury</writer> 
+                <album>Album: Live Killer</album>
+                <label>Label: EMI</label>
+                <releaseYear>
+                    Released: 
+                    <year>1975</year>
+                    <month>October</month>
+                    <day>31</day>
+                </releaseYear>
+                <length>
+                    Legth:
+                    <minute>5m</minute>
+                    <second>55</second>
+                </length>
+                <description>Description: Bohemian</description>
+                <artwork>
+                    
+                </artwork>
+            </song>
+        </music> 
     </storeDetails>
     <script xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
-        
+        function toggleTheme(){
+            var btn = document.getElementById("btn");
+            var bdy = document.getElementById("bdy");
+            bdy.classList.toggle("dark-theme");
+            if(bdy.classList.contains("dark-theme")){
+                btn.innerHTML = "Light Theme";
+            }
+            else{
+                btn.innerHTML = "Dark Theme";
+            }
+        }
         ]]></script>
         
 </musicStore>
+</body>
