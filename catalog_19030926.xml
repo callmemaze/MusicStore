@@ -39,12 +39,88 @@
             <div class="slide">
             </div>
         </div>
+        <div class="headlines">
+            <div class="headlines-details">
+                Order Now On 
+                <storeName><span>Music Store</span></storeName>
+                <address>Address: Kathmandu</address>
+                <phoneNumber>Phone-No: 09812321</phoneNumber>
+                <website>Website: www.musictstore.com</website>
+                <socialMedia>
+                    <facebook>
+                    </facebook>
+                    <instagram>
+                    </instagram>
+                </socialMedia>
+            </div>
+        </div>
+        <div class="new-music">
+            <div class="new-release">
+                <div class="head">
+                    <h1>New Releases</h1> 
+                </div>
+                <div class="new-release-section">
+                    <div class="new-release-song">
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                            <img src="./images/Continuum.jpg"></img>
+                        </html>
+                        <span class="new-release-title">Continuum</span>
+                        <span class="new-release-artist">John Mayer</span>
+                    </div>
+                    <div class="new-release-song">
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                            <img src="./images/fearless.jpg"></img>
+                        </html>
+                        <span class="new-release-title">Fearless</span>
+                        <span class="new-release-artist">Taylor Swift</span>
+                    </div>
+                    <div class="new-release-song">
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                            <img src="./images/paradise.jpg"></img>
+                        </html>
+                        <span class="new-release-title">Paradise Valley</span>
+                        <span class="new-release-artist">John Mayer</span>
+                    </div>
+                    <div class="new-release-song">
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                            <img src="./images/rare.png"></img>
+                        </html>
+                        <span class="new-release-title">Rare</span>
+                        <span class="new-release-artist">Selena Gomez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="popular-head">
+                    <h1>Popular This Week</h1> 
+                </div>
+                <div class="popular-list">
+                    <html xmlns="http://www.w3.org/1999/xhtml">
+                    <ol type="1">
+                        <li>
+                            <span class="popular-title">Fearless</span>
+                            <span class="popular-artist">Taylor Swift</span>
+                        </li>
+                        <li>
+                            <span class="popular-title">Fearless</span>
+                            <span class="popular-artist">Taylor Swift</span>
+                        </li>
+                        <li>
+                            <span class="popular-title">Fearless</span>
+                            <span class="popular-artist">Taylor Swift</span>
+                        </li>
+                        <li>
+                            <span class="popular-title">Fearless</span>
+                            <span class="popular-artist">Taylor Swift</span>
+                        </li>
+                    </ol>
+                    </html>
+                </div>
+            </div>
+        </div>
     </div>
-    <storeDetails>
-        <storeName></storeName>
-        <address></address>
-        <phoneNumber></phoneNumber>
-        <website></website>
+    
+        
         <Logo></Logo>
         <music>
             <song title="bohemian rhapsody">
@@ -96,5 +172,5 @@
                 </artwork>
             </song>
         </music> 
-    </storeDetails>
+    
 </musicStore>
