@@ -299,33 +299,174 @@ div[class~=popular-list] ol li span[class~=popular-artist]{
     transition: font-size .2s, color .2s;
     line-height: 1.4;
 }
-music{
+album{
     width: 100%;
     display: flex;
     height: auto;
-    background-color: blue;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+}
+div[class~=album-main]{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div[class~=album-head]{
+    width: 80%;
+    height: 40px;
+    border-bottom: 1px solid #656565;
+    display: flex;
+    align-items: center;
+}
+
+div[class~=album-head] span[class~=album-heading]{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+div[class~=album-details]{
+    width: 250px;
+    height: 300px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div[class~=album-artwork]{
+    width: 250px;
+    height: 250px;
+    content: url('./images/Continuum.jpg');
+    box-shadow: 0px 1px 5px 0px rgb(50 50 50 / 75%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+div[class~=order-now]{
+    width: 100px;
+    height:40px;
+    background: linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: white;
+}
+
+div[class~=album-main-content]{
+    display: flex;
+    
+}
+div[class~=album-content]{
+    width: 800px;
+    height: 100%; 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px; 
+}
+div[class~=album-title]{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #656565;
+}
+
+span[class~=span-album-title]{
+    font-size: 25px;
+    font-weight: 500;
+    
+    font-family: Montserrat Alternates;
+}
+span[class~=span-album-artist]{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Montserrat Alternates;
+    color: #da0f47;
+}
+
+div[class~=album-song]{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}   
+
+div[class~=album-song-heading]{
+    width: 80%;
+    height: 30px;
+    border-bottom: 1px solid #656565;
+    display: flex;
+    align-items: center;
+}
+
+div[class~=album-song-heading] span{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat Alternates;  
+}
+
+div[class~=album-song-main]{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 
 song {
     width: 250px;
     height: 250px;
-    background: red;
-    display: block;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    transition: 0.6s ease-in-out;
     cursor: pointer;
-    margin-left: 50px;
     z-index: 1;
+    position: relative;
+    background: rgba( 255, 255, 255, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-song:hover{
-    box-shadow: 5px 5px #000;;
-    transform: scale(1.1);
+
+div[class~=album-song-main] song div[class~=face]{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-genre,director,producer,writer,label,releaseYear, length,album {
+
+div[class~=album-song-main] song div[class~=artwork]{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out; 
+}
+
+div[class~=album-song-main] song:hover div[class~=artwork]{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+
+genre,director,producer,writer,label,releaseYear, length,title {
     display: block;
     padding: 3px;
 }
@@ -333,12 +474,18 @@ genre,director,producer,writer,label,releaseYear, length,album {
 artwork{
     width: 250px;
     height: 250px;  
-    display:block;
-    padding: 0 !important;
-    position: absolute;
+    content: url('./images/gravity.jpg');
+    border-radius: 10px;
 }
-
-artwork img{
+artwork2{
     width: 250px;
-
+    height: 250px;  
+    content: url('./images/slow.jpg');
+    border-radius: 10px;
+}
+artwork3{
+    width: 250px;
+    height: 250px;  
+    content: url('./images/stopthistrain.jpg');
+    border-radius: 10px;
 }
