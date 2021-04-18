@@ -347,6 +347,16 @@ div[class~=album-artwork]{
     border-radius: 3px;
     cursor: pointer;
 }
+
+div[class~=album-artwork1]{
+    width: 250px;
+    height: 250px;
+    content: url('./images/liveKiller.png');
+    box-shadow: 0px 1px 5px 0px rgb(50 50 50 / 75%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 div[class~=order-now]{
     width: 100px;
     height:40px;
@@ -431,12 +441,9 @@ song {
     cursor: pointer;
     z-index: 1;
     position: relative;
-    background: rgba( 255, 255, 255, 0.50 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9.0px );
-    -webkit-backdrop-filter: blur( 9.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    perspective: 600px;
 }
 
 div[class~=album-song-main] song div[class~=face]{
@@ -448,6 +455,14 @@ div[class~=album-song-main] song div[class~=face]{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #da0f47;
+    background: rgba( 255, 255, 255, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    border-radius: 4px;
+    border: 1px soli4rgba( 255, 255, 255, 0.18 );
+    
 }
 
 div[class~=album-song-main] song div[class~=artwork]{
@@ -466,7 +481,46 @@ div[class~=album-song-main] song:hover div[class~=artwork]{
     
 }
 
-genre,director,producer,writer,label,releaseYear, length,title {
+div[class~=card-front]{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+div[class~=card-back]{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 4px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #D3D3D3;
+}
+
+song:hover div[class~=card-front]{
+    transform: rotateX(-180deg);
+}
+song:hover div[class~=card-back]{
+    transform: rotateX(0deg);
+}
+
+genre,director,producer,songWriter,label,releaseYear, length,title {
     display: block;
     padding: 3px;
 }
@@ -475,17 +529,38 @@ artwork{
     width: 250px;
     height: 250px;  
     content: url('./images/gravity.jpg');
-    border-radius: 10px;
+    border-radius: 4px;
 }
 artwork2{
     width: 250px;
     height: 250px;  
     content: url('./images/slow.jpg');
-    border-radius: 10px;
+    border-radius: 4px;
 }
 artwork3{
     width: 250px;
     height: 250px;  
     content: url('./images/stopthistrain.jpg');
-    border-radius: 10px;
+    border-radius: 4px;
+}
+
+BohemianArtwork{
+    width: 250px;
+    height: 250px;  
+    content: url('./images/bohemian.jpg');
+    border-radius: 4px;
+}
+
+championArtwork{
+    width: 250px;
+    height: 250px;  
+    content: url('./images/champion.jpeg');
+    border-radius: 4px;
+}
+
+loveArtwork{
+    width: 250px;
+    height: 250px;  
+    content: url('./images/loveofmylife.jpg');
+    border-radius: 4px;
 }
