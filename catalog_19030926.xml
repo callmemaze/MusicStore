@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="catalog_19030926.css"?>  
-<musicStore>
+<!DOCTYPE MazeRecords SYSTEM "catalog_19030926.dtd">
+<MazeRecords>
     <div class="container">
         <header>
             <nav class="navbar">
@@ -40,11 +41,11 @@
         </div>
         <div class="headlines">
             <div class="headlines-details">
-                Order Now On 
-                <storeName><span>Music Store</span></storeName>
-                <address>Address: Kathmandu</address>
+                <span>Order Now On</span> 
+                <storeName>Maze<span>Records</span></storeName>
+                <address ad_id="a01">Address: Kathmandu</address>
                 <phoneNumber type="primary">Phone-No: 09812321</phoneNumber>
-                <website>Website: www.musictstore.com</website>
+                <website>Website: <span>www.mazerecords.com</span></website>
                 <socialMedia>
                     <facebook>
                     </facebook>
@@ -101,16 +102,16 @@
                             <span class="popular-artist">Taylor Swift</span>
                         </li>
                         <li>
-                            <span class="popular-title">Fearless</span>
-                            <span class="popular-artist">Taylor Swift</span>
+                            <span class="popular-title">Continuum</span>
+                            <span class="popular-artist">John Mayer</span>
                         </li>
                         <li>
-                            <span class="popular-title">Fearless</span>
-                            <span class="popular-artist">Taylor Swift</span>
+                            <span class="popular-title">Paradise Valley</span>
+                            <span class="popular-artist">John Mayer</span>
                         </li>
                         <li>
-                            <span class="popular-title">Fearless</span>
-                            <span class="popular-artist">Taylor Swift</span>
+                            <span class="popular-title">Rare</span>
+                            <span class="popular-artist">John Mayer</span>
                         </li>
                     </ol>
                     </html>
@@ -118,7 +119,6 @@
             </div>
         </div>
     </div>
-        <Logo></Logo>
         <album a_id="al01" type="single">
             <div class="album-main">
                 <div class="album-head">
@@ -143,22 +143,22 @@
                             </div>
                             <div class="album-song-main">
                                 <song s_id="s01" al_id="al01">
-                                    <div class="face face1">
+                                    <div class="face">
                                         <div class="content">
                                             <title>Title: Gravity</title>
                                             <genre>Genre: Rock</genre>
-                                            <songWriter>Song Writer: John Mayer</songWriter> 
+                                            <songWriter >Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer> 
                                             <label>Label: Aware</label>
                                             <releaseYear>
-                                                Released: 
+                                                <span>Released: </span>
                                                 <year>2006</year>
                                                 <month>September</month>
                                                 <day>12</day>
                                             </releaseYear>
                                             <length>
-                                                Legth:
+                                                <span>Length: </span> 
                                                 <minute>4m</minute>
                                                 <second>05s</second>
                                             </length>
@@ -170,23 +170,22 @@
                                     </div>
                                 </song>
                                 <song s_id="s02" al_id="al01">
-                                    <div class="face face1">
+                                    <div class="face">
                                         <div class="content">
                                             <title>Title: SDIBR </title>
                                             <genre>Genre: Rock</genre>
-                                            <songWriter>Song Writer: John Mayer</songWriter> 
+                                            <songWriter >Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer>
-                                            
                                             <label>Label: Columbia</label>
                                             <releaseYear>
-                                                Released: 
+                                                <span>Released: </span> 
                                                 <year>2006</year>
                                                 <month>September</month>
                                                 <day>12</day>
                                             </releaseYear>
                                             <length>
-                                                Legth:
+                                                <span>Length: </span> 
                                                 <minute>4m</minute>
                                                 <second>02s</second>
                                             </length>
@@ -198,24 +197,24 @@
                                     </div>
                                 </song>
                                 <song s_id="s03" al_id="al01">
-                                    <div class="face face1">
+                                    <div class="face">
                                         <div class="content">
                                             <title>Title: Stop This Train</title>
-                                            <genre>Genre: Rock</genre>
-                                            <director>Director: Roy Thomas Baker</director> 
-                                            <producer>Producer: Roy Thomas Baker</producer>
-                                            <songWriter>Song Writer: John Mayer</songWriter> 
+                                            <genre>Genre: Pop</genre>
+                                            <songWriter >Song Writer: John Mayer</songWriter>
+                                            <director>Director: John Mayer</director> 
+                                            <producer>Producer: Steve Jordan</producer> 
                                             <label>Label: Columbia</label>
                                             <releaseYear>
-                                                Released: 
-                                                <year>1975</year>
-                                                <month>October</month>
-                                                <day>31</day>
+                                                <span>Released: </span>
+                                                <year>2006</year>
+                                                <month>September</month>
+                                                <day>12</day>
                                             </releaseYear>
                                             <length>
-                                                Legth:
-                                                <minute>5m</minute>
-                                                <second>55</second>
+                                                <span>Length: </span> 
+                                                <minute>4m</minute>
+                                                <second>45s</second>
                                             </length>
                                         </div>
                                     </div>
@@ -253,7 +252,7 @@
                                 <span class="album-song-head">Album Song</span>
                             </div>
                             <div class="album-song-main">
-                                <song>
+                                <song s_id="s04" al_id="al02">
                                     <div class="card-front">
                                         <BohemianArtwork> 
                                         </BohemianArtwork>
@@ -263,68 +262,68 @@
                                         <genre>Genre: Rock</genre>
                                         <director>Director: Roy Thomas Baker</director> 
                                         <producer>Producer: Roy Thomas Baker</producer>
-                                        <songWriter>Song Writer: Freddie Mercury</songWriter> 
+                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
                                         <label>Label: EMI</label>
                                         <releaseYear>
-                                            Released: 
+                                            <span>Released: </span> 
                                             <year>1975</year>
                                             <month>October</month>
                                             <day>31</day>
                                         </releaseYear>
                                         <length>
-                                            Legth:
+                                            <span>Length: </span> 
                                             <minute>5m</minute>
-                                            <second>55</second>
+                                            <second>55s</second>
                                         </length>
                                     </div>
                                 </song>
-                                <song>
-                                    <div class="card-front">
-                                        <championArtwork> 
-                                        </championArtwork>
-                                    </div>
-                                    <div class="card-back">
-                                        <title>Title: Bohemian Rhapsody</title>
-                                        <genre>Genre: Rock</genre>
-                                        <director>Director: Roy Thomas Baker</director> 
-                                        <producer>Producer: Roy Thomas Baker</producer>
-                                        <songWriter>Song Writer: Freddie Mercury</songWriter> 
-                                        <label>Label: EMI</label>
-                                        <releaseYear>
-                                            Released: 
-                                            <year>1975</year>
-                                            <month>October</month>
-                                            <day>31</day>
-                                        </releaseYear>
-                                        <length>
-                                            Legth:
-                                            <minute>5m</minute>
-                                            <second>55</second>
-                                        </length>
-                                    </div>
-                                </song>
-                                <song>
+                                <song s_id="s05" al_id="al02">
                                     <div class="card-front">
                                         <loveArtwork> 
                                         </loveArtwork>
                                     </div>
                                     <div class="card-back">
-                                        <title>Title: Bohemian Rhapsody</title>
+                                        <title>Title: Love of My Life</title>
                                         <genre>Genre: Rock</genre>
                                         <director>Director: Roy Thomas Baker</director> 
                                         <producer>Producer: Roy Thomas Baker</producer>
-                                        <songWriter>Song Writer: Freddie Mercury</songWriter> 
-                                        <label>Label: EMI</label>
+                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
+                                        <label>Label: Elektra</label>
                                         <releaseYear>
-                                            Released: 
+                                            <span>Released: </span> 
                                             <year>1975</year>
-                                            <month>October</month>
-                                            <day>31</day>
+                                            <month>November</month>
+                                            <day>21</day>
                                         </releaseYear>
                                         <length>
-                                            Legth:
-                                            <minute>5m</minute>
-                                            <second>55</second>
+                                            <span>Length: </span> 
+                                            <minute>3m</minute>
+                                            <second>39s</second>
+                                        </length>
+                                    </div>
+                                </song>
+                                <song s_id="s06" al_id="al02">
+                                    <div class="card-front">
+                                        <championArtwork> 
+                                        </championArtwork>
+                                    </div>
+                                    <div class="card-back">
+                                        <title>Title: We Are the Champions</title>
+                                        <genre>Genre: Rock</genre>
+                                        <director>Director: Queen</director> 
+                                        <producer>Producer: Mike Clay Stone</producer>
+                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
+                                        <label>Label: EMI</label>
+                                        <releaseYear>
+                                            <span>Released: </span> 
+                                            <year>1977</year>
+                                            <month>October</month>
+                                            <day>25</day>
+                                        </releaseYear>
+                                        <length>
+                                            <span>Length: </span> 
+                                            <minute>2m</minute>
+                                            <second>29s</second>
                                         </length>
                                     </div>
                                 </song>
@@ -334,27 +333,4 @@
                 </div>
             </div>
         </album> 
-</musicStore>
-
-<!-- <song title="bohemian rhapsody">
-    <genre>Genre: Rock</genre>
-    <director>Director: Roy Thomas Baker</director> 
-    <producer>Producer: Roy Thomas Baker</producer>
-    <songWriter>Song Writer: Freddie Mercury</songWriter> 
-    <album>Album: Live Killer</album>
-    <label>Label: EMI</label>
-    <releaseYear>
-        Released: 
-        <year>1975</year>
-        <month>October</month>
-        <day>31</day>
-    </releaseYear>
-    <length>
-        Legth:
-        <minute>5m</minute>
-        <second>55</second>
-    </length>
-    <description>Description: Bohemian</description>
-    <artwork>
-    </artwork>
-</song>  -->
+</MazeRecords>

@@ -14,11 +14,6 @@ div[class~=container]{
     width: 100%;
     height: 100vh;
     display: block;
-    /* background: url(./background.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    object-fit: contain;
-    background-position: center; */
     overflow: hidden;
 }
 
@@ -44,9 +39,10 @@ nav{
 logo{
     width: 50px;
     height: 50px;
-    content: url('musicstore.png');
+    content: url('images/musicstore.png');
     background-repeat: no-repeat;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 div[class~=genre] {
@@ -122,13 +118,15 @@ div[class~=hamburger] span{
 div[class~=search]{
     width: 30px;
     height: 30px;
-    content: url('./search.svg');
+    content: url('./images/search.svg');
+    cursor: pointer;
 }
 
 div[class~=cart]{
     width: 30px;
     height: 30px;
-    content: url('./cart.png');
+    content: url('./images/cart.png');
+    cursor: pointer;
 }
 
 /* Slider Content */
@@ -147,26 +145,26 @@ div[class~=slider] img{
 div[class~=slide]{
     width: 100%;
     height: 100%;
-    content:url(./.jpg);
+    content:url(./images/imagine.jpg);
     object-fit: cover;
-    animation:slider 8s infinite linear; 
+    animation:slider 10s infinite linear; 
+    
 }
 
 /* Slider animation keyframe */
 
 @keyframes slider{
     0%{
-        content: url(./21pilot.jpg);
-        object-fit: cover;
+        content: url(./images/21pilot.jpg);
     }
 
     20%{
-        content: url(./taylor.jpg);
+        content: url(./images/taylor.jpg);
     }
     
-    35%{content: url(./background.jpg);}
+    35%{content: url(./images/greetavan.jpg);}
     
-    70%{content: url(./Wherethelightis.jpg);
+    70%{content: url(./images/Wherethelightis.jpg);
         
     }
 }
@@ -200,11 +198,13 @@ facebook{
     width: 24px;
     height: 24px;
     content: url('./images/facebook.svg'); 
+    cursor: pointer;
 }
 instagram{
     width: 24px;
     height: 24px;
     content: url('./images/instagram.png'); 
+    cursor: pointer;
 }
 
 /* New-Realese */
@@ -342,10 +342,11 @@ div[class~=album-details]{
 div[class~=album-artwork]{
     width: 250px;
     height: 250px;
-    content: url('./images/Continuum.jpg');
+    background: url('./images/Continuum.jpg') no-repeat;
     box-shadow: 0px 1px 5px 0px rgb(50 50 50 / 75%);
     border-radius: 3px;
     cursor: pointer;
+    background-size: cover;
 }
 
 div[class~=album-artwork1]{
@@ -367,6 +368,11 @@ div[class~=order-now]{
     justify-content: center;
     border-radius: 3px;
     color: white;
+}
+
+div[class~=order-now]:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
 }
 
 div[class~=album-main-content]{
