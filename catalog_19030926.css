@@ -229,10 +229,12 @@ div[class~=new-release] div[class~=head] h1{
     font-size: 20px;
     font-weight: 500;
 }
+
 div[class~=new-release-section]{
     display: flex;
     justify-content: space-evenly;
 }
+
 div[class~=new-release-song]{
     width: 150px;
     height: 200px;
@@ -240,17 +242,40 @@ div[class~=new-release-song]{
     flex-direction: column;
     cursor: pointer;
 }
+
 div[class~=new-release-song]:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
+
 div[class~=new-release-song]:hover span[class~=new-release-artist]{
     color: #da0f47;
 } 
-div[class~=new-release-section] img{
+
+continuumArtwork{
     width: 150px;
     height: 150px;
+    content: url(./images/Continuum.jpg);
 }
+
+fearlessArtwork{
+    width: 150px;
+    height: 150px;
+    content: url(./images/fearless.jpg);
+}
+
+paradiseArtwork{
+    width: 150px;
+    height: 150px;
+    content: url(./images/paradise.jpg);
+}
+
+rareArtwork{
+    width: 150px;
+    height: 150px;
+    content: url(./images/rare.png);
+}
+
 span[class~=new-release-artist] {
     color: #656565;
 }
@@ -259,46 +284,55 @@ div[class~=popular]{
     width: 35%;
     height: 100%;
 }
+
 div[class~=popular] div[class~=popular-head]{
     width: 100%;
     height: 45px;
     align-items: center;
     display: flex;
 }
+
 div[class~=popular] div[class~=popular-head] h1{
     font-size: 20px;
     font-weight: 500;
 }
-div[class~=popular] ol{
+
+div[class~=popular] ul{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-div[class~=popular] ol li div[class~=popular-title] {
+
+div[class~=popular] ul li div[class~=popular-title] {
     font-size: 14px;
     color: #222222;
     display: block;
     transition: font-size .2s;
     line-height: 1.4;
 }
-div[class~=popular] ol li{
+
+div[class~=popular] ul li{
     margin-bottom: 5px;
     cursor: pointer;
 }
-div[class~=popular] ol li:hover{
+
+div[class~=popular] ul li:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
-div[class~=popular] ol li:hover span[class~=popular-artist]{
+
+div[class~=popular] ul li:hover span[class~=popular-artist]{
     color: #da0f47;
 }
-div[class~=popular-list] ol li span[class~=popular-artist]{
+
+div[class~=popular-list] ul li span[class~=popular-artist]{
     color: #656565;
     font-size: 14px;
     display: block;
     transition: font-size .2s, color .2s;
     line-height: 1.4;
 }
+
 album{
     width: 100%;
     display: flex;
@@ -307,12 +341,14 @@ album{
     flex-wrap: wrap;
     margin-top: 20px;
 }
+
 div[class~=album-main]{
     width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 div[class~=album-head]{
     width: 80%;
     height: 40px;
@@ -461,7 +497,7 @@ div[class~=album-song-main] song div[class~=face]{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #da0f47;
+    color: rgb(218,15,71);
     background: rgba( 255, 255, 255, 0.50 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.0px );
@@ -506,9 +542,6 @@ div[class~=card-back]{
     backface-visibility: hidden;
     transform: rotateX(180deg);
     transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 20px;
     background: rgba( 0, 0, 0, 0.45 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -519,6 +552,10 @@ div[class~=card-back]{
     color: #D3D3D3;
 }
 
+div[class~=card-back] span[class~=genre-span]{
+    padding-left: 3px;
+}
+
 song:hover div[class~=card-front]{
     transform: rotateX(-180deg);
 }
@@ -526,8 +563,12 @@ song:hover div[class~=card-back]{
     transform: rotateX(0deg);
 }
 
-genre,director,producer,songWriter,label,releaseYear, length,title {
+director,producer,songWriter,label,releaseYear, length,title {
     display: block;
+    padding: 3px;
+}
+
+genre{
     padding: 3px;
 }
 

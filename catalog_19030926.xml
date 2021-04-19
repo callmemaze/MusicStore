@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="catalog_19030926.css"?>  
-<!DOCTYPE MazeRecords SYSTEM "catalog_19030926.dtd">
-<MazeRecords>
+<!-- <!DOCTYPE MazeRecords SYSTEM "catalog_19030926.dtd"> -->
+<MazeRecords xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./catalog_19030926.xsd">
     <div class="container">
         <header>
             <nav class="navbar">
@@ -61,30 +61,22 @@
                 </div>
                 <div class="new-release-section">
                     <div class="new-release-song">
-                        <html xmlns="http://www.w3.org/1999/xhtml">
-                            <img src="./images/Continuum.jpg"></img>
-                        </html>
+                        <continuumArtwork></continuumArtwork>
                         <span class="new-release-title">Continuum</span>
                         <span class="new-release-artist">John Mayer</span>
                     </div>
                     <div class="new-release-song">
-                        <html xmlns="http://www.w3.org/1999/xhtml">
-                            <img src="./images/fearless.jpg"></img>
-                        </html>
+                        <fearlessArtwork></fearlessArtwork>
                         <span class="new-release-title">Fearless</span>
                         <span class="new-release-artist">Taylor Swift</span>
                     </div>
                     <div class="new-release-song">
-                        <html xmlns="http://www.w3.org/1999/xhtml">
-                            <img src="./images/paradise.jpg"></img>
-                        </html>
+                        <paradiseArtwork></paradiseArtwork>
                         <span class="new-release-title">Paradise Valley</span>
                         <span class="new-release-artist">John Mayer</span>
                     </div>
                     <div class="new-release-song">
-                        <html xmlns="http://www.w3.org/1999/xhtml">
-                            <img src="./images/rare.png"></img>
-                        </html>
+                        <rareArtwork></rareArtwork>
                         <span class="new-release-title">Rare</span>
                         <span class="new-release-artist">Selena Gomez</span>
                     </div>
@@ -95,26 +87,24 @@
                     <h1>Popular This Week</h1> 
                 </div>
                 <div class="popular-list">
-                    <html xmlns="http://www.w3.org/1999/xhtml">
-                    <ol type="1">
+                    <ul>
                         <li>
-                            <span class="popular-title">Fearless</span>
+                            <span class="popular-title">1. Fearless</span>
                             <span class="popular-artist">Taylor Swift</span>
                         </li>
                         <li>
-                            <span class="popular-title">Continuum</span>
+                            <span class="popular-title">2. Continuum</span>
                             <span class="popular-artist">John Mayer</span>
                         </li>
                         <li>
-                            <span class="popular-title">Paradise Valley</span>
+                            <span class="popular-title">3. Paradise Valley</span>
                             <span class="popular-artist">John Mayer</span>
                         </li>
                         <li>
-                            <span class="popular-title">Rare</span>
+                            <span class="popular-title">4. Rare</span>
                             <span class="popular-artist">John Mayer</span>
                         </li>
-                    </ol>
-                    </html>
+                    </ul>  
                 </div>
             </div>
         </div>
@@ -122,7 +112,7 @@
         <album a_id="al01" type="single">
             <div class="album-main">
                 <div class="album-head">
-                    <span class="album-heading">Availabel Albums</span>
+                    <span class="album-heading">Available Albums</span>
                 </div>
                 <div class="album-main-content">
                     <div class="album-details">
@@ -146,7 +136,7 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: Gravity</title>
-                                            <genre>Genre: Rock</genre>
+                                            <span>Genre:</span><genre>Rock</genre>
                                             <songWriter >Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer> 
@@ -173,7 +163,7 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: SDIBR </title>
-                                            <genre>Genre: Rock</genre>
+                                            <span>Genre:</span><genre>Rock</genre>
                                             <songWriter >Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer>
@@ -200,7 +190,7 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: Stop This Train</title>
-                                            <genre>Genre: Pop</genre>
+                                            <span>Genre:</span><genre>Pop</genre>
                                             <songWriter >Song Writer: John Mayer</songWriter>
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer> 
@@ -232,7 +222,7 @@
         <album a_id="al02" type="band">
             <div class="album-main">
                 <div class="album-head">
-                    <span class="album-heading">Availabel Albums</span>
+                    <span class="album-heading">Available Albums</span>
                 </div>
                 <div class="album-main-content">
                     <div class="album-details">
@@ -259,10 +249,10 @@
                                     </div>
                                     <div class="card-back">
                                         <title>Title: Bohemian Rhapsody</title>
-                                        <genre>Genre: Rock</genre>
-                                        <director>Director: Roy Thomas Baker</director> 
-                                        <producer>Producer: Roy Thomas Baker</producer>
-                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
+                                        <span class="genre-span">Genre:</span><genre>Rock</genre>
+                                        <director>Director:Roy Baker</director> 
+                                        <producer>Producer:Roy Baker</producer>
+                                        <songWriter >SongWriter: Freddie Mercury</songWriter> 
                                         <label>Label: EMI</label>
                                         <releaseYear>
                                             <span>Released: </span> 
@@ -284,10 +274,10 @@
                                     </div>
                                     <div class="card-back">
                                         <title>Title: Love of My Life</title>
-                                        <genre>Genre: Rock</genre>
-                                        <director>Director: Roy Thomas Baker</director> 
-                                        <producer>Producer: Roy Thomas Baker</producer>
-                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
+                                        <span class="genre-span">Genre:</span><genre>Rock</genre>
+                                        <director>Director:Roy Baker</director> 
+                                        <producer>Producer:Roy Baker</producer>
+                                        <songWriter >SongWriter: Freddie Mercury</songWriter> 
                                         <label>Label: Elektra</label>
                                         <releaseYear>
                                             <span>Released: </span> 
@@ -309,10 +299,10 @@
                                     </div>
                                     <div class="card-back">
                                         <title>Title: We Are the Champions</title>
-                                        <genre>Genre: Rock</genre>
+                                        <span class="genre-span">Genre:</span><genre>Rock</genre>
                                         <director>Director: Queen</director> 
                                         <producer>Producer: Mike Clay Stone</producer>
-                                        <songWriter >Song Writer: Freddie Mercury</songWriter> 
+                                        <songWriter >SongWriter: Freddie Mercury</songWriter> 
                                         <label>Label: EMI</label>
                                         <releaseYear>
                                             <span>Released: </span> 

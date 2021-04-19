@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="li">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element ref="div" minOccurs="0"/>
+            <xs:element ref="span" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ul">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="li" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="div">
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="ul"/>
+        <xs:element ref="button"/>
+        <xs:element ref="div"/>
+        <xs:element ref="continuumArtwork"/>
+        <xs:element ref="fearlessArtwork"/>
+        <xs:element ref="paradiseArtwork"/>
+        <xs:element ref="rareArtwork"/>
+        <xs:element ref="span"/>
+        <xs:element ref="storeName"/>
+        <xs:element ref="address"/>
+        <xs:element ref="phoneNumber"/>
+        <xs:element ref="website"/>
+        <xs:element ref="socialMedia"/>
+        <xs:element ref="h1"/>
+        <xs:element ref="title"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="songWriter"/>
+        <xs:element ref="director"/>
+        <xs:element ref="producer"/>
+        <xs:element ref="label"/>
+        <xs:element ref="releaseYear"/>
+        <xs:element ref="length"/>
+        <xs:element ref="artwork"/>
+        <xs:element ref="artwork2"/>
+        <xs:element ref="artwork3"/>
+        <xs:element ref="song"/>
+        <xs:element ref="BohemianArtwork"/>
+        <xs:element ref="loveArtwork"/>
+        <xs:element ref="championArtwork"/>
+        <xs:element ref="header"/>
+      </xs:choice>
+      <xs:attribute type="xs:string" name="class" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="span">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="class" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="button">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="span" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="logo" type="xs:string"/>
+  <xs:element name="nav">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="logo"/>
+        <xs:element ref="div" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="class"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="facebook" type="xs:string"/>
+  <xs:element name="instagram" type="xs:string"/>
+  <xs:element name="storeName">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="span"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="address">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="ad_id"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="phoneNumber">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="type"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="website">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="span"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="socialMedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="facebook"/>
+        <xs:element ref="instagram"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="h1" type="xs:string"/>
+  <xs:element name="continuumArtwork" type="xs:string"/>
+  <xs:element name="fearlessArtwork" type="xs:string"/>
+  <xs:element name="paradiseArtwork" type="xs:string"/>
+  <xs:element name="rareArtwork" type="xs:string"/>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nav"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="year" type="xs:short"/>
+  <xs:element name="month" type="xs:string"/>
+  <xs:element name="day" type="xs:byte"/>
+  <xs:element name="minute" type="xs:string"/>
+  <xs:element name="second" type="xs:string"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="genre">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rock"></xs:enumeration>
+            <xs:enumeration value="Jazz"></xs:enumeration>
+            <xs:enumeration value="Pop"></xs:enumeration>
+            <xs:enumeration value="Country"></xs:enumeration>
+            <xs:enumeration value="Dubstep"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType> 
+</xs:element>
+  <xs:element name="songWriter" type="xs:string"/>
+  <xs:element name="director" type="xs:string"/>
+  <xs:element name="producer" type="xs:string"/>
+  <xs:element name="label" type="xs:string"/>
+  <xs:element name="releaseYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="span"/>
+        <xs:element ref="year"/>
+        <xs:element ref="month"/>
+        <xs:element ref="day"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="length">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="span"/>
+        <xs:element ref="minute"/>
+        <xs:element ref="second"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="artwork" type="xs:string"/>
+  <xs:element name="artwork2" type="xs:string"/>
+  <xs:element name="artwork3" type="xs:string"/>
+  <xs:element name="song">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="div" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="s_id" use="optional"/>
+      <xs:attribute type="xs:string" name="al_id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BohemianArtwork" type="xs:string"/>
+  <xs:element name="loveArtwork" type="xs:string"/>
+  <xs:element name="championArtwork" type="xs:string"/>
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="div"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="a_id" use="optional"/>
+      <xs:attribute type="xs:string" name="type" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MazeRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="div"/>
+        <xs:element ref="album" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

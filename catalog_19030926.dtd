@@ -1,50 +1,29 @@
 <!ELEMENT MazeRecords (div,album+)>
-        <!ELEMENT div (header|ul|div|button|storeName|address|phoneNumber|website|socialMedia|h1|html|span|song|title|genre|songWriter|director|producer|label|releaseYear|length|artwork|artwork2|artwork3|BohemianArtwork|loveArtwork|championArtwork)*>
-        <!ATTLIST div
-                class CDATA #REQUIRED>
+        <!ELEMENT div (header|ul|div|button|span|storeName|address|phoneNumber|website|socialMedia|h1|continuumArtwork|fearlessArtwork|paradiseArtwork|rareArtwork|html|song|title|genre|songWriter|director|producer|label|releaseYear|length|artwork|artwork2|artwork3|BohemianArtwork|loveArtwork|championArtwork)*>
         <!ELEMENT header (nav)>
         <!ELEMENT nav (logo,div+)>
-        <!ATTLIST nav
-                class CDATA #REQUIRED>
         <!ELEMENT logo (#PCDATA)>
         <!ELEMENT ul (li)*>
         <!ELEMENT li ANY>
         <!ELEMENT button (span)*>
         <!ELEMENT span (#PCDATA)>
-        <!ATTLIST span
-                class CDATA #IMPLIED>
         <!ELEMENT storeName (#PCDATA|span)*>
         <!ELEMENT address (#PCDATA)>
         <!ELEMENT phoneNumber (#PCDATA)>
-        <!ATTLIST phoneNumber
-                type CDATA #REQUIRED>
         <!ELEMENT website ANY>
         <!ELEMENT socialMedia (facebook,instagram)>
         <!ELEMENT facebook (#PCDATA)>
         <!ELEMENT instagram (#PCDATA)>
         <!ELEMENT h1 (#PCDATA)>
-        <!ELEMENT html (img|ol)*>
-        <!ATTLIST html
-                xmlns CDATA #REQUIRED>
-        <!ELEMENT img (#PCDATA)>
-        <!ATTLIST img
-                src CDATA #REQUIRED>
-        <!ELEMENT ol (li)*>
-        <!ATTLIST ol
-                type CDATA #REQUIRED>
+        <!ELEMENT continuumArtwork (#PCDATA)>
+        <!ELEMENT fearlessArtwork (#PCDATA)>
+        <!ELEMENT paradiseArtwork (#PCDATA)>
+        <!ELEMENT rareArtwork (#PCDATA)>
         <!ELEMENT album (div)*>
-        <!ATTLIST album
-                a_id ID #REQUIRED
-                type CDATA #REQUIRED>
         <!ELEMENT song (div)*>
-        <!ATTLIST song
-                al_id IDREF #REQUIRED
-                s_id ID #REQUIRED>
         <!ELEMENT title (#PCDATA)>
         <!ELEMENT genre (#PCDATA)>
         <!ELEMENT songWriter (#PCDATA)>
-        <!ATTLIST address
-                ad_id ID #REQUIRED>
         <!ELEMENT director (#PCDATA)>
         <!ELEMENT producer (#PCDATA)>
         <!ELEMENT label (#PCDATA)>
@@ -61,3 +40,16 @@
         <!ELEMENT BohemianArtwork (#PCDATA)>
         <!ELEMENT loveArtwork (#PCDATA)>
         <!ELEMENT championArtwork (#PCDATA)>
+
+        <!-- Attributes list -->
+        <!ATTLIST div class CDATA #REQUIRED>
+        <!ATTLIST nav class CDATA #REQUIRED>
+        <!ATTLIST span class CDATA #IMPLIED>
+        <!ATTLIST phoneNumber type CDATA #REQUIRED>
+        <!ATTLIST html xmlns CDATA #REQUIRED>
+        <!ATTLIST album a_id ID #REQUIRED type CDATA #REQUIRED>
+        <!ATTLIST song
+                al_id IDREF #REQUIRED
+                s_id ID #REQUIRED>
+        <!ATTLIST address
+                ad_id ID #REQUIRED>
