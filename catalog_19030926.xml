@@ -136,8 +136,8 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: Gravity</title>
-                                            <span>Genre:</span><genre>Rock</genre>
-                                            <songWriter >Song Writer: John Mayer</songWriter> 
+                                            <span class="genre-span">Genre:</span><genre>Rock</genre>
+                                            <songWriter>Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer> 
                                             <label>Label: Aware</label>
@@ -163,7 +163,7 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: SDIBR </title>
-                                            <span>Genre:</span><genre>Rock</genre>
+                                            <span class="genre-span">Genre:</span><genre>Rock</genre>
                                             <songWriter >Song Writer: John Mayer</songWriter> 
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer>
@@ -190,7 +190,7 @@
                                     <div class="face">
                                         <div class="content">
                                             <title>Title: Stop This Train</title>
-                                            <span>Genre:</span><genre>Pop</genre>
+                                            <span class="genre-span">Genre:</span><genre>Pop</genre>
                                             <songWriter >Song Writer: John Mayer</songWriter>
                                             <director>Director: John Mayer</director> 
                                             <producer>Producer: Steve Jordan</producer> 
