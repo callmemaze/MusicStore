@@ -51,11 +51,12 @@ div[class~=genre] {
 }
 
 div[class~=genre] ul li{
-    color: black !important;
+    color: black;
 }
 div[class~=sub-menu]{
     display: none;
 }
+
 div[class~=genre] ul li:hover div[class~=sub-menu]{
     display: block;
     position: absolute;
@@ -522,6 +523,10 @@ div[class~=album-song-main] song:hover div[class~=artwork]{
     opacity: 0;
     
 }
+div[class~=content]{
+    border: solid 2px #da0f47;
+}
+
 
 div[class~=card-front]{
     position: absolute;
@@ -610,4 +615,10 @@ loveArtwork{
     height: 250px;  
     content: url('./images/loveofmylife.jpg');
     border-radius: 4px;
+}
+
+@media(max-width:1280px){
+    song{
+        margin:5px
+    }
 }
