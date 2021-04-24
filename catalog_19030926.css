@@ -524,7 +524,7 @@ div[class~=album-song-main] song:hover div[class~=artwork]{
     
 }
 div[class~=content]{
-    border: solid 2px #da0f47;
+    border: 2px solid black;
 }
 
 

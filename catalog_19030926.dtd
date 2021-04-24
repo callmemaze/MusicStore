@@ -11,7 +11,7 @@
         <!ELEMENT address (#PCDATA)>
         <!ELEMENT phoneNumber (#PCDATA)>
         <!ELEMENT website ANY>
-        <!ELEMENT socialMedia (facebook,instagram)>
+        <!ELEMENT socialMedia (facebook?,instagram?)>
         <!ELEMENT facebook (#PCDATA)>
         <!ELEMENT instagram (#PCDATA)>
         <!ELEMENT h1 (#PCDATA)>
